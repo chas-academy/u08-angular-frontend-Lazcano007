@@ -1,0 +1,54 @@
+.petProfileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+span {
+  margin-left: 3rem ;
+}
+h1 {
+  font-size: 1.8rem;
+  text-decoration: underline;
+  margin-bottom: 2rem;
+  margin-top: 0rem;
+}
+
+.card {
+  background-color: #dbfdfb;
+  padding: 1.5rem;
+  border-radius: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  width: 330px;
+}
+
+  .editButton {
+    background-color: #2d2ded;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    margin-left: 16rem;
+    padding: 0.6rem 1.4rem;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: #2593dc;
+    }
+  }
+
+.card-body {
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+
+    strong {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
