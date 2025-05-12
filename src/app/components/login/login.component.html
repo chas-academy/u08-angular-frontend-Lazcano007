@@ -1,0 +1,11 @@
+<div class="RegisterContainer">
+    <h1>LOGIN</h1>
+    <div class="card">
+      <form id="loginForm" (ngSubmit)="login()">
+        <input type="text" id="name" [(ngModel)]="name" name="name" placeholder="Name" required/>
+        <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="Password" required/>
+        <button type="submit">Login</button>
+        <div class="registerBtn"> Not a member? <a routerLink="/register">Register here</a></div>          
+      </form>
+    </div>
+</div>
