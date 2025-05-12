@@ -1,0 +1,16 @@
+<div class="petProfileContainer">
+    <h1>PET PROFILE</h1>
+    
+    <div class="card" *ngIf="pet">
+      <div class="card-header">
+        <button class="editButton" [routerLink]="['/edit-pet', pet._id]">Edit</button>
+      </div>
+      <div class="card-body">
+        <p><strong>Name:</strong> <span>{{ pet.name }}</span></p>
+        <p><strong>Species:</strong> <span>{{ pet.species }}</span></p>
+        <p><strong>Breed:</strong> <span>{{ pet.breed }} </span></p>
+        <p><strong>Age:</strong> <span>{{ pet.age }}</span></p>
+      </div>
+    </div>
+  </div>
+  
