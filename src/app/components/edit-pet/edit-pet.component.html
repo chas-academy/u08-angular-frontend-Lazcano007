@@ -1,0 +1,22 @@
+<h1 id="petName">Edit Pet</h1>
+<div class="editContainer">
+  <form id="editPetForm" (ngSubmit)="updatePet()">
+    <div class="formCard">
+    <button type="button" class="delete-btn" (click)="deletePet()">Delete</button>
+
+     <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="pet.name" name="name" placeholder="Name" required/>
+
+     <label for="name">Species:</label>
+    <input type="text" id="species" [(ngModel)]="pet.species" name="species" placeholder="Species"required/>
+
+     <label for="name">Breed:</label>
+    <input type="text" id="breed" [(ngModel)]="pet.breed" name="breed" placeholder="Breed"required/>
+    
+     <label for="name">Age:</label>
+    <input type="number" id="age" [(ngModel)]="pet.age" name="age" placeholder="Age"required/>
+
+    <button type="submit" class="save-btn">Save</button>
+  </div>
+</form>
+</div>
