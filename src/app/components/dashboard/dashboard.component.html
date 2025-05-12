@@ -1,0 +1,37 @@
+<div class="dashboardContainer">
+    <aside class="sidebar">
+      <div class="menu">
+        <button class="menuButton logout" type="button" id="logoutBtn" (click)="logout()">Log out</button>
+      </div>
+    </aside>
+    <main class="mainContent">
+      <h1 class="title">DASHBOARD</h1>
+      <div class="addPetSection">
+        <button id="goToAddPet" class="addButton" [routerLink]="['/add-pet']">Add new pet</button>
+      </div>
+      <div class="tableWrapper">
+        <table class="petTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Species</th>
+              <th>Breed</th>
+              <th>Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngIf="pets.length === 0">
+              <td colspan="4" class="no-pets-message">You don't have any pets registred. <br> Click 'Add pet' to register one!</td>
+            </tr>
+            <tr *ngFor="let pet of pets" (click)= "goToPetProfile(pet._id)">
+            <td>{{ pet.name }}</td>
+            <td>{{ pet.species }}</td>
+            <td>{{ pet.breed }}</td>
+            <td>{{ pet.age }}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+</div>
+  
