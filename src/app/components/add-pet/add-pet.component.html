@@ -1,0 +1,22 @@
+<div class="formWrapper">
+  <h1 class="title">ADD PET</h1>
+<div class="formGruop">
+    <form (ngSubmit)="addPet()" #addpetForm="ngForm">
+      <div class="InputBox">
+        <input type="text" id="name" [(ngModel)]="pet.name" name="name" placeholder="Name" required/>
+      </div>
+      <div class="InputBox">
+        <input type="text" id="breed" [(ngModel)]="pet.breed" name="breed" placeholder="Breed"/>
+      </div>
+      <div class="InputBox">
+        <input type="text" id="species" [(ngModel)]="pet.species" name="species" placeholder="Species" required/>
+      </div>
+      <div class="InputBox">
+        <input type="text" id="age" [(ngModel)]="pet.age" name="age" placeholder="Age" required/>
+      </div>
+      <div class="submitButton">
+        <button type="submit" class="addButton">Add pet</button>
+      </div>
+    </form>
+  </div>
+</div>

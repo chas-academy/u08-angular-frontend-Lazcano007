@@ -1,0 +1,77 @@
+
+  .title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .formWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .formGruop {
+    background-color: #a8d7ce;
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.574);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .InputBox {
+    display: flex;
+    flex-direction: column;
+    label {
+      font-weight: bold;
+      margin-bottom: .5rem;
+    }
+    input {
+      padding: 0.6rem 1rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+  }
+  
+  .submitButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  
+    .addButton {
+      background-color: #4cd3c2;
+      color: white;
+      padding: 1rem 1.5rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.5s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      &:hover {
+        background-color: #3cb1a3;
+      }
+    }
+  }
+  
+  // MOBIL anpassad
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.5rem;
+    }
+    .formWrapper {
+      padding: 1.5rem;
+    }
+  }
+  
