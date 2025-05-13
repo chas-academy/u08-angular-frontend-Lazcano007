@@ -24,6 +24,7 @@ describe('AddPetComponent', () => {
     expect(component).toBeTruthy();
   });
 
+   // Test som kontrollerar att pet.name uppdateras när ny data skickas in i formuläret
   it('should update pet name when input value changes',() => {  // Test som kontrollerar att pet name uppdateras när man knappar in data
     const input = fixture.nativeElement.querySelector('input[name="name"]'); // Hittar formuläret men specifik "name" i DOM
     input.value = 'Chica';  // Dummy data

@@ -21,4 +21,11 @@ describe('DashboardComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+ 
+  // Testar om userId tas bort från localStorage vid utloggning
+  it('should remove userId from localStorage when loging out', () => {
+  localStorage.setItem('userId', '12345'); // Sätter en dummy userId i localStorage
+  component.logout(); // Anropar logout metoden
+  expect(localStorage.getItem('userId')).toBeNull(); // Kollar att userId har tagits bort från localStorage
+ });
 });
