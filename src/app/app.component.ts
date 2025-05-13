@@ -3,9 +3,6 @@ import { RouterModule } from '@angular/router';
 import { RegisterComponent } from "./components/register/register.component";
 import { LoginComponent } from "./components/login/login.component";
 import { AddPetComponent } from "./components/add-pet/add-pet.component";
-// import { Dashboard } from "./components/Dashboard/dashboard.component";
-
-
 
 
 @Component({
@@ -15,6 +12,7 @@ import { AddPetComponent } from "./components/add-pet/add-pet.component";
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
+
 export class AppComponent {
   title = 'u08-angular';
 }
