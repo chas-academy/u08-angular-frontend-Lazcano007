@@ -55,10 +55,10 @@ constructor(private petService: PetService, private route: ActivatedRoute, priva
   deletePet(): void {
     if(!confirm("Are you sure you want to delete this pet?"))
       return;
-    this.petService.deletePet(this.petId).subscribe({
+    this.petService.deletePet(this.petId).subscribe({   
       next: () => {
         console.log("Your pet has successfully been deteletd!");
-        this.router.navigate(['/dashboard']);
+        this.router.navigate(['/dashboard']); // Skickar dig till dashboarden
       }, 
       error: (err: unknown) => {
         if (err instanceof Error) {

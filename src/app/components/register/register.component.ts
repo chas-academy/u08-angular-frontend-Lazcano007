@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './register.component.scss'
 })
 export class RegisterComponent {
-  user: User = {name: '', email: '', password:''};
+  user: User = {name: '', email: '', password:''};   // Detta initierar en "User" och ger en tom sträng som default
 
   constructor (private http: HttpClient, private router: Router) {}
 

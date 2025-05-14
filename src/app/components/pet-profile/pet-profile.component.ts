@@ -19,7 +19,7 @@ export class PetProfileComponent implements OnInit {
   constructor (private route: ActivatedRoute, private petService: PetService) {}
   
   ngOnInit() {
-    const petId = this.route.snapshot.paramMap.get('id');
+    const petId = this.route.snapshot.paramMap.get('id');  // Hämtar id:et från URL:en 
     if(!petId) return;
       this.petService.getPetsById(petId).subscribe({
         next: (pet) => {

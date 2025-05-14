@@ -12,7 +12,7 @@ import { PetService } from '../../service/pet.service';
   styleUrl: './add-pet.component.scss'
 })
 export class AddPetComponent {
-  pet = {
+  pet = {         // Detta initierar en "Pet" och ger en tom sträng som default
     owner: '',
     name: '',
     species: '',
@@ -31,7 +31,7 @@ export class AddPetComponent {
 
     this.petService.createPet(petData).subscribe({
       next: () => {
-      this.router.navigate(['/dashboard'])
+      this.router.navigate(['/dashboard']) // Skickar dig till dashboarden
     },
       error: (err: unknown) => {
         if (err instanceof Error) {

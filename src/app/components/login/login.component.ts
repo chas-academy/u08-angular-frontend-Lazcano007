@@ -19,12 +19,12 @@ export class LoginComponent implements OnInit {
   constructor(private http: HttpClient, private router: Router) { }
 
   login() {
-    const userData = { name: this.name, password: this.password };
+    const userData = { name: this.name, password: this.password };   // Detta skapar en variabel som innehåller namn och lösen som användaren skriver i formuläret
 
     this.http.post<any>(`https://u05.onrender.com/api/v1/Users/login`, userData).subscribe({
       next: (res) => {
-        localStorage.setItem('userId', res.user._id); //spara useid:et
-        this.router.navigate(['dashboard']);     //omdirigeras till dahsboard
+        localStorage.setItem('userId', res.user._id); // Spara useid:et
+        this.router.navigate(['dashboard']);     // // Skickar dig till dashboarden
       },
       error: (err: unknown) => {
         if (err instanceof Error) {
@@ -33,6 +33,7 @@ export class LoginComponent implements OnInit {
       }
     });
   }
+
 ngOnInit(): void {
   if (localStorage.getItem('userId')) {
       this.router.navigate(['/dashboard']); 
