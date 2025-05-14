@@ -11,6 +11,8 @@ Denna projekt innehåller fullständigt stöd för alla CRUD-operationer för ha
 
 ## Deployad version
 
+För er som vill testa den deployade versionen istället, kan ni hitta det här: [PetCareForBestfriend](https://pet-care-for-bestfriend.netlify.app/)
+
 ## Installation
 
 För dig som vill testa projekt lokalt, följ dessa instruktioner:
