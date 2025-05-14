@@ -1,7 +1,7 @@
+@if(pet) {
 <div class="petProfileContainer">
     <h1>PET PROFILE</h1>
-    
-    <div class="card" *ngIf="pet">
+    <div class="card">
       <div class="card-header">
         <button class="editButton" [routerLink]="['/edit-pet', pet._id]">Edit</button>
       </div>
@@ -13,4 +13,4 @@
       </div>
     </div>
   </div>
-  
+}
